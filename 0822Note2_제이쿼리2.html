@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  	<script>
+  		$(document).ready(()=>{
+  			$("button").on("click", ()=>{
+            let newText = $("h1").html();
+            $("#text").html(newText);
+  			});
+
+  		});
+  	</script>
+    <!-- .html() : getter 메소드, 안에 내용 안써주면 불러오는 역할 -->
+    <!-- 예) 눌렀을 때 아래에 h1에 있는 "안녕하세요:D" -->
+    <!-- .html() : satter 메소드, 내용 써준대로 나옴, 값 그대로 설정-->
+    <!-- 예) 눌렀을 때 아래에 "개발부트캠프" -->
+
+
+  </head>
+
+  <body>
+
+	  <h1>안녕하세요:D</h1>
+	  <p>아래의 버튼을 누르면 다음 단락에 새로운 텍스트를 설정할 수 있어요!!</p>
+	  <button>새로운 텍스트!</button>
+	  <p id="text"></p>
+
+
+  </body>
+
+</html>

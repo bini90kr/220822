@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  	<script>
+  		$(document).ready(()=>{
+  			$("button").on("click", ()=>{
+            $("#list").append("<li>새로 추가됨</li>");
+  			});
+
+  		});
+  	</script>
+<!-- append : 버튼누르면 3번째 줄 이후로 추가됨 -->
+<!-- prepend : 버튼누르면 1번째 줄 앞으로 추가됨 -->
+  </head>
+
+  <body>
+
+	  <h1>append와 prepend</h1>
+    <ul id="list">
+      <li>첫 번째 줄입니당</li>
+      <li>두 번째 줄입니당</li>
+      <li>세 번째 줄입니당</li>
+    </ul>
+	  <button>새로운 아이템 추가하기</button>
+	  <p id="text"></p>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+      #divBox {
+		  	width: 100px;
+	  		height: 100px;
+	  		background-color: yellow;
+	  		border: 5px solid green;
+	  		margin-top: 20px;
+      }
+     </style>
+  	<script>
+  		$(document).ready(()=>{
+  			$("#a").on("click", ()=>{
+            $("#divBox").fadeIn();
+  			});
+        $("#b").on("click", ()=>{
+            $("#divBox").fadeOut();
+  			});
+        $("#c").on("click", ()=>{
+            $("#divBox").slideUp();
+  			});
+        $("#d").on("click", ()=>{
+            $("#divBox").slideDown();
+  			});
+        $("#e").on("click", ()=>{
+            $("#divtest").show();
+  			});
+        $("#f").on("click", ()=>{
+            $("#divtest").hide();
+  			});
+  		});
+  	</script>
+  </head>
+  <body>
+    <h1> 페이드 인/아웃, 슬라이드 업/다운, 요소 표시/숨김 </h1>
+    <button id="a">페이드 인</button>
+    <button id="b">페이드 아웃</button>
+    <button id="c">슬라이드 업</button>
+    <button id="d">슬라이드 다운</button>
+    <div id="divBox"></div>
+    <button id="e">나를 보여줘:D</button>
+    <button id="f">나를 숨겨줘:(</button>
+    <div id="divtest">look at me:D</div>
+
+  </body>
+
+</html>

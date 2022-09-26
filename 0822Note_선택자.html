@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+
+  	<style>
+  		* { color: blue; }
+	  	h2, p {
+	  		border: 3px solid yellow;
+  			padding: 10px;
+  		}
+
+      div{
+        border : 2px solid red;
+      }
+      div p {
+        background-color: silver;
+      }
+
+      div > p {
+        text-decoration : underline;
+      }
+
+      div ~ h3 {
+        background-color : pink;
+      }
+
+  	</style>
+    <!-- * : 전체에 적용할 때 쓰임 -->
+    <!-- A, B : ,사용해서 그룹에다가 적용해주기 -->
+  </head>
+
+  <body>
+
+  	<h1>전체 선택자</h1>
+	  <h2>그룹 선택자</h2>
+	  <p>그룹 지정해보기</p>
+    <div>
+      <P> 나는 자식입니다. </p>
+      <P> 나는 자식2입니다. </P>
+      <span>
+        <p> 나는 자손입니다. </p>
+      </span>
+
+    </div>
+    <h3> 나는 div의 형제입니다. </h3>
+    <h3> 나는 div의 형제2입니다. </h3>
+<!-- div p : 자손 선택자, div안에 있는 모든 p에 적용 -->
+<!-- div > p : 자식 선택자, div안에 있는 자식 p만 적용 -->
+<!-- div ~ A : 동위 선택자 = 형제 선택자, div와 동위 관계에 있고 뒤에 존재하는 A에 적용 -->
+<!-- div + A : 인접 동위 선택자 = 인접한 형제, div 바로 뒤에 존재하는 A만 적용 -->
+<!-- span : div 와 비슷함, 줄바꾸기 -->
+
+  </body>
+</html>

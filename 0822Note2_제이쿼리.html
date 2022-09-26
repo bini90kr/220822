@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  	<script>
+  		$(document).ready(()=>{
+  			$("button").on("click", ()=>{
+              alert($("h1").html());
+  			});
+
+  		});
+  	</script>
+    <!-- alert($("h1").html()) h1코드 다 가져와 -->
+    <!-- 변수로 바꿔보기, 버튼 클릭 이후 작성해야하는 내용-->
+    <!-- let a = $("h1").html(); -->
+    <!-- alert(a); -->
+  </head>
+
+  <body>
+
+	  <h1>안녕하세요:D</h1>
+	  <p>아래의 버튼을 누르면 다음 단락에 새로운 텍스트를 설정할 수 있어요!!</p>
+	  <button>새로운 텍스트!</button>
+	  <p id="text"></p>
+
+
+  </body>
+
+</html>

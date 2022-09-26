@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+      #popup {
+        position:fixed;
+        width:200px;
+        height:200px;
+        border:4px solid pink;
+        background-color : silver;
+        left: 0;
+        top: 150px;
+      }
+     </style>
+  	<script>
+  		$(document).ready(()=>{
+  			$("button").on("click", ()=>{
+            $("#popup").hide();
+  			});
+        $("#bye").on("click", ()=>{
+            $("#popup").hide();
+  			});
+
+  		});
+  	</script>
+  </head>
+  <body>
+    <h1> 팝업 만들어보기! </h1>
+    <button> 버튼을 누르세요 </button>
+    <div id="popup">
+      <div id="bye"> X끄기 </div>
+
+    </div>
+
+  </body>
+
+</html>
